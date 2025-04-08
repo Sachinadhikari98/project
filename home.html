@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOME</title>
+    <title>Business Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .hero {
+            background: #0078D7;
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            padding: 30px 0;
+            background: white;
+        }
+
+        .stat {
+            font-size: 2em;
+            color: #0078D7;
+            font-weight: bold;
+        }
+
+        .services {
+            padding: 40px 20px;
+            background: #fff;
+        }
+
+        .service-box {
+            display: inline-block;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta {
+            background: #0078D7;
+            color: white;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: white;
+            color: #0078D7;
+            padding: 10px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta a:hover {
+            background: #f1f1f1;
+        }
+
+        nav {
+            background-color: #0078D7;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        a img {
+            filter: grayscale(100%);
+            transition: 0.3s;
+        }
+
+        a:hover img {
+            filter: none;
+        }
+        /* Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.animate-fade {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out;
+}
+
+.animate-zoom {
+  animation: zoomIn 1s ease-out;
+}
+
+    </style>
 </head>
+
 <body>
-    This is the home page.
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="hero animate-fade">
+    <div class="hero">
+        <h1>Build Websites That Shine!</h1>
+        <p>We create stunning, fast, and responsive websites for businesses.</p>
+    </div>
+    </div>
+    <div class="stats animate-slide-up">
+    <div class="stats">
+        <div class="stat">Happy Clients</div>
+        <div class="stat">Experience</div>
+        <div class="stat">Years Experience</div>
+    </div>
+    </div>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-box">Web Design</div>
+        <div class="service-box">Styling and Layout</div>
+        <div class="service-box">E-commerce Solutions</div>
+    </div>
+    <div class="services">
+        <h2>What Our Clients Say</h2>
+        <div class="service-box">
+            <p>"They built our website exactly how we imagined it. Super fast and responsive!"</p>
+            <strong>- Ram Shrestha</strong>
+        </div>
+        <div class="service-box">
+            <p>"Professional team and top-notch design work. Highly recommend!"</p>
+            <strong>- Sagar Thapa</strong>
+        </div>
+
+    </div>
+    <div class="services">
+        <h2>Meet Our Team</h2>
+        <div class="service-box">
+            <h3>Sachin Adhikari</h3>
+            <p>Founder & Web Developer</p>
+        </div>
+        <div class="service-box">
+            <h3>Riya Shrestha</h3>
+            <p>Designer & Branding Expert</p>
+        </div>
+        <div class="service-box">
+            <h3>Arjun Basnet</h3>
+            <p>SEO Specialist</p>
+        </div>
+    </div>
+    <div class="services">
+        <h2>Frequently Asked Questions</h2>
+        <div class="service-box">
+            <h4>How long does it take to build a website?</h4>
+            <p>Most websites are completed within 2–3 weeks, depending on complexity.</p>
+        </div>
+        <div class="service-box">
+            <h4>Do you offer future support?</h4>
+            <p>Yes! We offer maintenance packages to keep your site up-to-date.</p>
+        </div>
+    </div>
+    <div class="cta animate-zoom">
+    <div class="cta">
+        <h2>Get a Stunning Website Today!</h2>
+        <br>
+        <a href="contact.html">Get a Quote</a>
+    </div>
+    </div>
 </body>
+
 </html>

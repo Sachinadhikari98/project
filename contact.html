@@ -6,6 +6,142 @@
     <title>CONTACT</title>
 </head>
 <body>
-    If you want to cantact us here is the page.
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Contact Us - Sachin Project</title>
+      <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+    
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f1f1f1;
+          color: #333;
+          padding-top: 60px;
+        }
+    
+        nav {
+          background-color: #0078D7;
+          padding: 10px 0;
+          width: 100%;
+          text-align: center;
+          position: fixed;
+          top: 0;
+        }
+    
+        nav a {
+          color: white;
+          margin: 0 15px;
+          text-decoration: none;
+          font-weight: bold;
+        }
+    
+        nav a:hover {
+          text-decoration: underline;
+        }
+    
+        .container {
+          max-width: 700px;
+          background-color: white;
+          margin: 30px auto;
+          padding: 30px;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h1 {
+          color: #0078D7;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+    
+        .contact-info {
+          margin-bottom: 20px;
+          font-size: 1.1em;
+        }
+    
+        .contact-info p {
+          margin-bottom: 10px;
+        }
+    
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+        }
+    
+        input, textarea {
+          padding: 12px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 1em;
+        }
+    
+        button {
+          padding: 12px;
+          background-color: #0078D7;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          font-size: 1em;
+          cursor: pointer;
+          font-weight: bold;
+        }
+    
+        button:hover {
+          background-color: #005bb5;
+        }
+    
+    
+        iframe {
+          width: 100%;
+          height: 300px;
+          border: none;
+          border-radius: 10px;
+        }
+    
+        footer {
+          text-align: center;
+          margin-top: 40px;
+          padding: 10px;
+          font-size: 0.9em;
+          color: #888;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+    
+      <div class="container">
+        <h1>Contact Us</h1>
+    
+        <div class="contact-info">
+          <p><strong>Email:</strong> sachinadh150@gmail.com</p>
+          <p><strong>Phone:</strong> 9860679515</p>
+          <p><strong>Address:</strong> Kathmandu, Dahachowk</p>
+        </div>
+    
+        <form>
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+    
+    </body>
+    </html>
+    
+      
 </body>
 </html>
